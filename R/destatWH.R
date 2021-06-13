@@ -16,12 +16,12 @@
 #' @importFrom graphics boxplot hist lines par plot
 #' @examples
 #' #Example 1
-#' data=c(rnorm(1000,30,10))
-#' DeStatWH( x=data ,dec=2 )
+#' data=rnorm(1000,30,10)
+#' destatWH( x=data ,dec=2 )
 #' #Example 2
-#' DeStatWH( x=data , op=TRUE )
+#' destatWH( x=data , op=TRUE )
 #' @export
-DeStatWH=function(x,dec=NULL,op=FALSE){
+destatWH=function(x,dec=NULL,op=FALSE){
   v=as.numeric(x)
   if(is.null(dec)){ dec=3 }
   if(op==FALSE){
